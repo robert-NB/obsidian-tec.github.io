@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Robert Bonmatí</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="fondo-interactivo"></div>
+    
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Robert Bonmatí</a>
+            <div class="nav-links">
+                <a href="about.html">Sobre mí</a>
+                <a href="projects.html">Proyectos</a>
+                <a href="contact.html">Contacto</a>
+            </div>
+            <button class="theme-toggle-btn" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="projects-main">
+        <div class="projects-header">
+            <h1>Mis proyectos</h1>
+            <div class="projects-filter">
+                <button class="filter-btn" data-filter="all">Todos</button>
+                <button class="filter-btn " data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ai">IA</button>
+                <button class="filter-btn" data-filter="security">Ciberseguridad</button>
+            </div>
+        </div>
+
+        <div class="projects-container container">
+
+            <section id="pentesting_tool" class="project-detail security ai">
+                <div class="project-info">
+                    <h2>Pentesting Tool A.I.</h2>
+                    <div class="project-meta">
+                        <span class="project-date">2024-2025</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Ciberseguridad</span>
+                            <span class="project-tag">Aplicaciones</span>
+                            <span class="project-tag">IA</span>
+
+                        </div>
+                    </div>
+                    <h4><i>Proyecto en desarrollo</i></h4>
+                    <p>Realiza un escaneo de red, pruebas de vulnerabilidad y detección de intrusiones.</p>
+                    <p>Detecta anomalías en el tráfico de red</p>
+                    <p>Usa su propia I.A. para analizar los resultados mostrando las mejores recomendaciónes de mejora.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/robert-NB/cyber-sec-scanner.git" class="btn-primary">
+                            <i class="fab fa-github"></i> Ver código
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image parallax-bg">
+                    <img src="./assets/Imagen1.png" alt="cyber-sec-scanner">
+                </div>
+            </section>
+
+            <section id="cyber-sec-scanner" class="project-detail security">
+                <div class="project-info">
+                    <h2>Cyber-Sec-Scanner</h2>
+                    <div class="project-meta">
+                        <span class="project-date">2025</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Ciberseguridad</span>
+                            <span class="project-tag">Aplicaciones</span>
+                        </div>
+                    </div>
+                    <p>Aplicación de escritorio para Windows 11 que analiza posibles vulnerabilidades en el sistema de forma básica.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/robert-NB/cyber-sec-scanner.git" class="btn-primary">
+                            <i class="fab fa-github"></i> Ver código
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image parallax-bg">
+                    <img src="./assets/Imagen1.png" alt="cyber-sec-scanner">
+                </div>
+            </section>
+
+            <section id="DANAlysis" class="project-detail web ai">
+                <div class="project-info">
+                    <h2>DANAlysis</h2>
+                    <div class="project-meta">
+                        <span class="project-date">2024</span>
+                        <div class="project-tags">
+                            <span class="project-tag">IA</span>
+                            <span class="project-tag">Web</span>
+                            <span class="project-tag">Datos</span>
+                        </div>
+                    </div>
+                    <p>Sistema de predicción de eventos climáticos de tipo DANA.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/robert-NB/DANAlysis.git" class="btn-primary">
+                            <i class="fab fa-github"></i> Ver código
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image parallax-bg">
+                    <img src="./assets/Imagen1.png" alt="DANAlysis">
+                </div>
+            </section>
+
+            <section id="obsidian-tec" class="project-detail web">
+                <div class="project-info">
+                    <h2>Obsidian-Tec</h2>
+                    <div class="project-meta">
+                        <span class="project-date">2022</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Web</span>
+                            <span class="project-tag">Seguridad</span>
+                        </div>
+                    </div>
+                    <p>Aplicación Web creada como TFG para una empresa de psicología y de osteopatía, con el fin de poder saber en que consiste, ponerse en contacto y agendar una cita.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/robert-NB/obsidian-tec.git" class="btn-primary">
+                            <i class="fab fa-github"></i> Ver código
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image parallax-bg">
+                    <img src="assets/Imagen1.png" alt="Obsidian-Tec">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <p>© 2025 Robert Bonmatí. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/robert-NB"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/robert02"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>
