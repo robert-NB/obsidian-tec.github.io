@@ -233,3 +233,23 @@
 .dark-mode .skill-category li::before {
     color: var(--secondary-color);
 }
+
+/* Añade esto al final de tu about.css */
+
+/* Asegurar que el título sea visible después de la animación */
+.animated-title {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Mantener visible después de la animación */
+.animated-title.visible, 
+.animated-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

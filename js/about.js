@@ -40,3 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "elastic.out(1, 0.5)"
     });
 });
+
