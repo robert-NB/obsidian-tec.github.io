@@ -148,3 +148,27 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
+const noticesContainer = document.getElementById('noticesContainer');
+
+async function fetchNotices() {
+    // Cargar el contenido de notices.html
+    const response = await fetch('notices.html');
+    const text = await response.text();
+
+    // Crear un contenedor temporal para parsear el HTML
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = text;
+
+    // Obtener las noticias de notices.html (ajusta la clase según tu estructura)
+    const noticeItems = tempDiv.querySelectorAll('.notice-card');
+
+    // Mostrar solo las dos primeras noticias
+    for (let i = 0; i < 2; i++) {
+        if (noticeItems[i]) {
+            const card = noticeItems[i].cloneNode(true); 
+            noticesContainer.appendChild(card);
+        }
+    }
+}
+
+fetchNotices();
