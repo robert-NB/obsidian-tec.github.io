@@ -253,3 +253,22 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+.timeline-item_two {
+    position: relative;
+    margin-bottom: 2rem;
+}
+/*
+.timeline-item_two::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    z-index: 1;
+}*/
