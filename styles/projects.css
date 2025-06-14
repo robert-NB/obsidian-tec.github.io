@@ -119,3 +119,19 @@
     background: #9b6bcf;
 }
 
+@media (max-width: 768px) {
+    .project-detail {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 8rem;
+    }
+
+    .project-info {
+        order: 1; /* TEXTO primero */
+    }
+
+    .project-image {
+        order: 2; /* IMAGEN después */
+        margin-bottom: 2rem;
+    }
+}
