@@ -272,3 +272,16 @@
     background: var(--primary-color);
     z-index: 1;
 }*/
+
+.about-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontalmente */
+    margin-bottom: 40px; /* separa del contenido siguiente */
+}
+
+.btn-secondary {
+    margin-top: 20px; /* distancia respecto a la imagen */
+    display: inline-block;
+    margin-bottom: 20px;
+}
