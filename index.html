@@ -30,7 +30,17 @@
 
     <main class="home-main">
         <section class="hero">
-            <h1 class="hero-title">Desarrollador Web & Especialista en Ciberseguridad</h1>
+            <h1 class="hero-title">
+                <p>
+                    Desarrollador Web
+                </p>
+                <p>
+                    Especialista en Ciberseguridad
+                </p>
+                <p>
+                    AI Developer
+                </p>
+            </h1>
             <p class="hero-subtitle">Creando soluciones seguras e innovadoras</p>
             <div class="hero-links">
                 <a href="projects.html" class="btn-primary">Ver proyectos</a>
@@ -84,7 +94,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- Chatbot -->
+    <link rel="stylesheet" href="styles/chatbot.css">
+    <div id="chatbot">
+        <div id="chatbot-header">🤖 RobiBot</div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu pregunta...">
+            <button id="chatbot-send">Enviar</button>
+        </div>
+    </div>
+    <button id="chatbot-toggle">💬</button>
+
     <!-- Añadir al final del body, antes de los otros scripts -->
+     <script src="js/faq-data.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="js/chatbot.js"></script>
+
     <script src="js/animations.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="js/main.js"></script>
