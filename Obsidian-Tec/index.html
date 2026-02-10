@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Obsidian-Tec | IA en Ciberseguridad Defensiva y Neutralización</title>
+    <meta name="description" content="Obsidian-Tec ofrece IA avanzada para la detección y neutralización de ciberamenazas en tiempo real. Protege tu infraestructura con tecnología de respuesta activa.">
+    <meta name="keywords" content="ciberseguridad IA, protección infraestructura crítica, detección amenazas tiempo real, Obsidian-Tec">
+    <link rel="canonical" href="https://tu-dominio.com/">
+     <link rel="shortcut icon" href="/Obsidian-Tec.ico" />
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Obsidian-Tec | IA en Ciberseguridad Defensiva">
+    <meta property="og:description" content="Neutralización de ataques en milisegundos mediante redes neuronales evolutivas.">
+    <meta property="og:image" content="Obsidian-Tec.png">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- PERFORMANCE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- SCHEMA.ORG -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Obsidian-Tec",
+      "url": "http://localhost:8080/",
+      "logo": "./Obsidian-Tec.png"
+    }
+    </script>
+    
+    <style>
+        :root { --brand-round: 2.5rem; }
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #d1d5db; overflow-x: hidden; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .logo-rounded { border-radius: var(--brand-round); }
+        .gradient-text {
+            background: linear-gradient(135deg, #e0d7ff 0%, #9d7cff 100%);
+            -webkit-background-clip: text;
+            background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            color: #9d7cff;
+        }
+        .glass { 
+            background: rgba(255, 255, 255, 0.02); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+        }
+        .glow-card { position: relative; overflow: hidden; }
+        .glow-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(157, 124, 255, 0.12), transparent 40%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        .glow-card:hover::before { opacity: 1; }
+        .glow-card > * { position: relative; z-index: 10; }
+        .cursor { display: inline-block; width: 8px; height: 15px; background: #9d7cff; margin-left: 5px; animation: blink 1s infinite; vertical-align: middle; }
+        @keyframes blink { 50% { opacity: 0; } }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #222; border-radius: 10px; }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 border-b border-white/5 bg-black/80 backdrop-blur-md" role="navigation">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3 group" title="Volver al inicio">
+                <img src="Obsidian-Tec.png" alt="Logo de Obsidian-Tec - Ciberseguridad con Inteligencia Artificial" class="w-10 h-10 logo-rounded transition-transform group-hover:scale-110">
+                <span class="text-white font-bold text-xl tracking-tighter uppercase">Obsidian<span class="text-purple-500">-Tec</span></span>
+            </a>
+            
+            <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em]">
+                <a href="#tecnologia" class="hover:text-purple-400 transition-colors">Tecnología</a>
+                <a href="#soluciones" class="hover:text-purple-400 transition-colors">Soluciones</a>
+                <a href="#contacto" class="hover:text-purple-400 transition-colors">Contacto</a>
+            </div>
+
+            <button aria-label="Solicitar demo del sistema" class="bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-500 hover:text-white transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-white/5">
+                DEMO SISTEMA
+            </button>
+        </div>
+    </nav>
+
+    <main class="relative pt-40 pb-20 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-purple-900/10 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
+        
+        <section class="max-w-7xl mx-auto px-6 text-center">
+            <header data-aos="fade-down" class="inline-block border border-purple-500/30 bg-purple-500/5 px-4 py-1 rounded-full mb-8">
+                <span class="text-purple-400 font-mono text-xs uppercase tracking-widest leading-none">Engine v2.4 Activo • Escaneo Global</span>
+            </header>
+            
+            <h1 data-aos="fade-up" data-aos-delay="200" class="text-5xl md:text-8xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
+                La IA que anticipa el <br>
+                <span class="gradient-text italic text-6xl md:text-9xl uppercase tracking-tighter">próximo ataque.</span>
+            </h1>
+
+            <p data-aos="fade-up" data-aos-delay="300" class="max-w-2xl mx-auto text-lg md:text-xl text-gray-400 mb-12 leading-relaxed">
+                Obsidian-Tec no solo detecta amenazas. Aprende patrones de comportamiento para neutralizar ataques antes de que toquen tu infraestructura crítica.
+            </p>
+
+            <div data-aos="zoom-in" data-aos-delay="400" class="relative max-w-4xl mx-auto border border-white/10 rounded-2xl bg-[#0a0a0a] shadow-2xl overflow-hidden shadow-purple-500/5 mb-24">
+                <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5 bg-[#111]">
+                    <div class="flex gap-1.5">
+                        <div class="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/40"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/40"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/40"></div>
+                    </div>
+                    <div class="text-[10px] text-gray-500 font-mono ml-4 uppercase tracking-[0.3em] text-center w-full">Console Log: Analysis_Core</div>
+                </div>
+                <div class="p-8 text-left font-mono text-sm min-h-[180px] bg-gradient-to-b from-transparent to-purple-900/5">
+                    <div id="terminal-content" aria-live="polite"></div><span class="cursor"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="tecnologia" class="py-24 bg-[#050505] relative border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="sr-only">Nuestra Tecnología de Ciberseguridad</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article data-aos="fade-up" class="glow-card p-8 rounded-2xl glass hover:bg-white/5 transition-all group">
+                    <div class="text-purple-500 mb-4 font-bold text-2xl uppercase font-mono" aria-hidden="true">01.</div>
+                    <h3 class="text-xl font-bold text-white mb-4 italic">Escaneo de Patrones</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">Analizamos el tráfico en la capa 7 para identificar anomalías antes de la ejecución de carga útil.</p>
+                </article>
+                <article data-aos="fade-up" data-aos-delay="100" class="glow-card p-8 rounded-2xl glass border-t-purple-500/30 transition-all">
+                    <div class="text-purple-500 mb-4 font-bold text-2xl uppercase font-mono" aria-hidden="true">02.</div>
+                    <h3 class="text-xl font-bold text-white mb-4 italic">IA Evolutiva</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">Redes neuronales que se retroalimentan de cada intrusión, endureciendo el kernel en tiempo real.</p>
+                </article>
+                <article data-aos="fade-up" data-aos-delay="200" class="glow-card p-8 rounded-2xl glass hover:bg-white/5 transition-all">
+                    <div class="text-purple-500 mb-4 font-bold text-2xl uppercase font-mono" aria-hidden="true">03.</div>
+                    <h3 class="text-xl font-bold text-white mb-4 italic">Respuesta Activa</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">Aislamiento automático y despliegue de señuelos (honeypots) para identificar el origen del atacante.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="soluciones" class="py-32 bg-black overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-20">
+            <div class="flex-1" data-aos="fade-right">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-10 leading-tight">
+                    Neutralización en <span class="text-purple-500 italic">milisegundos.</span>
+                </h2>
+                <ul class="space-y-8">
+                    <li class="flex gap-4 group">
+                        <span class="text-purple-500 font-mono font-bold group-hover:translate-x-1 transition-transform inline-block" aria-hidden="true">01.</span>
+                        <div><h4 class="text-white font-bold mb-1 underline decoration-purple-500/30">Ingesta masiva</h4><p class="text-gray-400 text-sm">Monitorización de logs y tráfico de red sin latencia.</p></div>
+                    </li>
+                    <li class="flex gap-4 border-l-2 border-purple-500/30 pl-4 group">
+                        <span class="text-purple-500 font-mono font-bold group-hover:translate-x-1 transition-transform inline-block" aria-hidden="true">02.</span>
+                        <div><h4 class="text-white font-bold mb-1 underline decoration-purple-500/30">Análisis Predictivo</h4><p class="text-gray-400 text-sm">Heurística avanzada comparada con patrones globales.</p></div>
+                    </li>
+                    <li class="flex gap-4 group">
+                        <span class="text-purple-500 font-mono font-bold group-hover:translate-x-1 transition-transform inline-block" aria-hidden="true">03.</span>
+                        <div><h4 class="text-white font-bold mb-1 underline decoration-purple-500/30">Mitigación Autónoma</h4><p class="text-gray-400 text-sm">Cierre de vectores sin requerir intervención manual.</p></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 relative" data-aos="fade-left">
+                <div class="relative z-10 p-12 md:p-16 glass rounded-[3rem] shadow-2xl group text-center overflow-hidden border-purple-500/10">
+                    <img src="Obsidian-Tec.png" alt="Motor de Defensa Obsidian-Tec" loading="lazy" class="w-72 h-72 mx-auto drop-shadow-[0_0_50px_rgba(157,124,255,0.2)] group-hover:scale-105 transition-transform duration-700 logo-rounded">
+                    <div class="absolute inset-0 bg-gradient-to-t from-purple-600/10 to-transparent pointer-events-none"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-32 bg-[#050505]">
+        <div data-aos="zoom-in" class="max-w-5xl mx-auto px-6">
+            <div class="glass p-12 md:p-20 rounded-[3rem] text-center relative overflow-hidden">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">¿Listo para blindar tu red?</h2>
+                <p class="text-gray-400 mb-12 text-lg max-w-2xl mx-auto">Solicita una auditoría técnica y descubre el nivel de resiliencia de tu infraestructura.</p>
+                
+                <form id="contact-form" class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto">
+                    <label for="email-input" class="sr-only">Correo electrónico corporativo</label>
+                    <input id="email-input" type="email" required name="email" placeholder="tu@empresa.com" class="flex-1 bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-purple-500 transition-all placeholder:text-gray-600">
+                    <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-10 py-4 rounded-2xl transition-all shadow-lg shadow-purple-600/20 uppercase text-xs tracking-[0.2em]">
+                        Solicitar Demo
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center bg-black">
+        <p class="text-gray-600 text-[9px] font-mono uppercase tracking-[0.1em]">© 2026 Obsidian-Tec Defense Engine. Protocolo AES-256 activo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true, offset: 100 });
+
+        document.querySelectorAll('.glow-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+                card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+            });
+        });
+
+        const content = [
+            "> [SYSTEM] Iniciando motor de IA Obsidian-Tec...",
+            "> [INFO] Escaneando patrones de malware en tiempo real.",
+            "> [!] AMENAZA: Intento de inyección SQL detectado.",
+            "> [ACTION] Contraataque: Aislamiento de socket IP: 192.168.1.105",
+            "> [DONE] Sistema íntegro. Vigilancia activa."
+        ];
+        const container = document.getElementById('terminal-content');
+        let lineIndex = 0, charIndex = 0;
+
+        function type() {
+            if (lineIndex < content.length) {
+                if (charIndex === 0) {
+                    const p = document.createElement('p');
+                    p.className = content[lineIndex].includes('AMENAZA') ? 'text-red-400 mb-1' : 
+                                  content[lineIndex].includes('DONE') ? 'text-green-400 mb-1' : 'text-purple-400 mb-1';
+                    container.appendChild(p);
+                }
+                container.lastChild.textContent += content[lineIndex].charAt(charIndex);
+                charIndex++;
+                if (charIndex < content[lineIndex].length) setTimeout(type, 25);
+                else {
+                    lineIndex++;
+                    charIndex = 0;
+                    setTimeout(type, 1000);
+                }
+            }
+        }
+        window.onload = type;
+    </script>
+
+</body>
+</html>
