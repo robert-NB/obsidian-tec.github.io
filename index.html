@@ -8,15 +8,30 @@
     <meta name="author" content="Robert Bonmatí Muñoz" />
 
     <meta property="og:title" content="Robert Bonmatí Muñoz — Creative Developer" />
-    <meta property="og:description" content="Creative developer y cybersecurity. Experiencias digitales, WebGL y sistemas con IA." />
+    <meta property="og:description" content="Creative developer y cybersecurity engineer. Experiencias digitales, WebGL y sistemas con IA." />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="/assets/index-zyH3dhnY.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-ejrDbgva.css">
+
+    <!-- SPA fallback para GitHub Pages: restaura la URL original antes de montar React. -->
+    <script>
+      (function () {
+        var q = window.location.search;
+        if (q && q.indexOf("?p=") === 0) {
+          var parts = q.slice(3).split("&q=");
+          var path = parts[0].replace(/~and~/g, "&");
+          var search = parts[1] ? "?" + parts[1].replace(/~and~/g, "&") : "";
+          window.history.replaceState(
+            null, null,
+            window.location.pathname.replace(/\/$/, "") + path + search + window.location.hash
+          );
+        }
+      })();
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
