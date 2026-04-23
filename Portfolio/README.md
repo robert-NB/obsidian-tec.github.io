@@ -1,1 +1,0 @@
-# obsidian-tec.github.io
