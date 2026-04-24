@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <title>Redirecting…</title>
     <script>
-      // SPA single-page: cualquier 404 redirige a la raíz del repo en GitHub Pages.
       (function () {
         var l = window.location;
-        var repoBase = "/obsidian-tec.github.io/";
-        l.replace(l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") + repoBase);
+        var segments = l.pathname.split("/").filter(Boolean);
+        var basePath = l.hostname.endsWith("github.io") && segments.length > 0 ? "/" + segments[0] + "/" : "/";
+        l.replace(l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") + basePath);
       })();
     </script>
-    <meta http-equiv="refresh" content="0; url=/obsidian-tec.github.io/" />
+    <meta http-equiv="refresh" content="0; url=/" />
   </head>
   <body></body>
 </html>

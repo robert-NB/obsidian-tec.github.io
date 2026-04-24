@@ -1,35 +1,34 @@
-=================================================================
-  Robert Bonmatí — Portfolio (build de producción)
-=================================================================
+PORTFOLIO - BUILD DE PRODUCCION
+================================
 
-Configurado para GitHub Pages en:
-  https://robert-nb.github.io/obsidian-tec.github.io/
+Este paquete contiene la web ya compilada con rutas RELATIVAS,
+por lo que funciona en cualquier ubicacion:
+  - Raiz de un dominio (https://tudominio.com/)
+  - Subcarpeta de GitHub Pages (https://usuario.github.io/repo/)
+  - Apertura en local con un servidor estatico
 
------------------------------------------------------------------
-1) PROBAR EN LOCAL (vista previa del build)
------------------------------------------------------------------
-Desde esta carpeta ejecuta:
-  npx serve .
-Luego abre:  http://localhost:3000/obsidian-tec.github.io/
+-------------------------------------------------
+1) PROBARLO EN LOCAL
+-------------------------------------------------
+Desde la carpeta descomprimida:
+   npx serve .
+Abre la URL que muestra (ej. http://localhost:3000).
 
-(Nota: NO abras los .html con doble clic; necesita servidor.)
+Alternativa con Python:
+   python -m http.server 8080
+Abre http://localhost:8080
 
------------------------------------------------------------------
-2) DESPLEGAR EN GITHUB PAGES (manual)
------------------------------------------------------------------
-a) Sube TODO el contenido de esta carpeta a la raíz del repo
-   "obsidian-tec.github.io" en la rama "main".
-b) En el repo: Settings > Pages
-     Source: Deploy from a branch
-     Branch: main  /  Folder: / (root)
-c) Espera 1-2 min y abre:
-   https://robert-nb.github.io/obsidian-tec.github.io/
+-------------------------------------------------
+2) SUBIRLO A GITHUB PAGES
+-------------------------------------------------
+Sube TODO el contenido de esta carpeta (incluido index.html,
+assets/, 404.html, favicon.ico, etc.) a la raiz de la rama
+que sirva GitHub Pages (normalmente "main" carpeta /root,
+o la rama "gh-pages").
 
------------------------------------------------------------------
-3) DESPLEGAR EN OTRO DOMINIO (raíz, no subcarpeta)
------------------------------------------------------------------
-Si lo subes a la raíz de un dominio (p.ej. www.tudominio.com),
-debes recompilar el código fuente con base "/":
-  - Edita vite.config.ts: base: "/"
-  - Edita public/404.html y src/App.tsx para quitar el prefijo
-  - Ejecuta:  npm run build
+En Settings > Pages: Source = Deploy from a branch.
+
+-------------------------------------------------
+3) SUBIRLO A UN DOMINIO PROPIO (cPanel/FTP)
+-------------------------------------------------
+Sube todo el contenido a la carpeta public_html (o equivalente).
