@@ -1,22 +1,82 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Robert Bonmatí Muñoz — Creative Developer & Cybersecurity</title>
-    <meta name="description" content="Portfolio de Robert Bonmatí Muñoz: creative developer y especialista en ciberseguridad. Proyectos de software, diseño y Obsidian-Tec." />
-    <meta name="author" content="Robert Bonmatí Muñoz" />
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Robert Bonmatí Muñoz. Desarrollo creativo, ingeniería de software y ciberseguridad.">
+  <meta property="og:title" content="Robert Bonmatí Muñoz — Creative Developer &amp; Cybersecurity">
+  <meta property="og:description" content="Desarrollo creativo, ingeniería de software y ciberseguridad.">
+  <meta property="og:type" content="website">
+  <title>Robert Bonmatí Muñoz — Creative Developer &amp; Cybersecurity</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/home.js" defer></script>
+  <script src="js/site.js" defer></script>
+</head>
+<body class="page page-hero">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-label="Robert Bonmatí Muñoz, inicio"><span aria-hidden="true">//</span> RBM</a>
+    <nav aria-label="Principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="trayectoria.html">Trayectoria</a>
+      <a href="stack.html">Stack</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
 
-    <meta property="og:title" content="Robert Bonmatí Muñoz — Creative Developer" />
-    <meta property="og:description" content="Creative developer y cybersecurity engineer. Experiencias digitales, WebGL y sistemas con IA." />
-    <meta property="og:type" content="website" />
+  <main id="main">
+    <section id="hero" class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="meta availability"><span aria-hidden="true"></span> En búsqueda activa de empleo · 2026</p>
+        <h1 id="hero-title">Robert<br><em>Bonmatí</em><br>Muñoz<span aria-hidden="true">.</span></h1>
+        <p class="role" lang="en">Creative developer &amp; cybersecurity</p>
+        <p class="hero-intro">Soy un desarrollador apasionado por el cruce entre el diseño, el código y la ciberseguridad. Me obsesionan los detalles, las animaciones suaves y los sistemas que escalan.</p>
+        <div class="actions">
+          <a class="button button-dark" href="proyectos.html">Proyectos</a>
+          <a class="button" href="#about">Sobre mí</a>
+        </div>
+      </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="./assets/index-ZatqQiWu.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-ejrDbgva.css">
-  </head>
+      <!-- La escena conserva una composición estática sin JavaScript. -->
+      <figure class="portrait">
+        <div class="portrait-image" data-portrait>
+          <div class="portrait-orbits" aria-hidden="true"></div>
+          <img src="assets/portrait.jpg" width="960" height="960" alt="Retrato de Robert Bonmatí Muñoz" fetchpriority="high">
+          <span class="portrait-mark" aria-hidden="true">✳</span>
+          <span class="portrait-spark" aria-hidden="true">✦</span>
+        </div>
+        <figcaption>
+          <button class="button palette-toggle" type="button" hidden>Cambiar color</button>
+          <span class="visually-hidden" role="status" data-palette-status></span>
+        </figcaption>
+      </figure>
+    </section>
 
-  <body>
-    <div id="root"></div>
-  </body>
+    <section id="about" class="section wrap about" aria-labelledby="about-title">
+      <div>
+        <p class="meta kicker">Sobre mí</p>
+        <h2 id="about-title">Construyo lo que <em>imagino</em>, protejo lo que importa.</h2>
+      </div>
+      <div class="about-copy">
+        <p>Construyo experiencias digitales y sistemas seguros con código limpio e ideas atrevidas.</p>
+        <p>Todos mis proyectos tienen una calidad y cuidado impolutos, siendo el más reciente esta propia web junto al proyecto <strong>Obsidian-Tec</strong>.</p>
+        <a class="button button-dark" href="cv-robert-bonmati.pdf" download>Descargar CV</a>
+        <dl class="stats">
+          <div><dt>Años de código</dt><dd>2+</dd></div>
+          <div><dt>Proyectos</dt><dd>10+</dd></div>
+          <div><dt>Matcha</dt><dd>∞</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap site-footer meta">
+      <span>Robert Bonmatí Muñoz · 2026</span>
+      <span lang="en">Crafted with code &amp; care</span>
+    </div>
+  </footer>
+</body>
 </html>
