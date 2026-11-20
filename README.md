@@ -31,4 +31,6 @@ Abre [la vista previa local](http://127.0.0.1:8000/) y usa Ctrl+C para detener e
 
 Publica los archivos desde la raíz de la rama configurada como origen de Pages. Las rutas relativas permiten servir el sitio bajo el subdirectorio del repositorio. Mantén los nombres de las páginas si ya se han compartido sus enlaces.
 
-Después de editar, comprueba el menú, el ancho móvil, el selector de color, los filtros, el movimiento reducido y la descarga del CV.
+La navegación se pliega hasta 54 rem. El botón Menú abre los enlaces y Escape lo cierra y devuelve el foco al botón. Sin JavaScript, los enlaces siguen visibles.
+
+Después de editar, comprueba la portada en móvil vertical y horizontal, el menú con teclado, las columnas del stack, el movimiento reducido y la descarga del CV.

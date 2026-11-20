@@ -17,26 +17,24 @@
   <a class="skip" href="#main">Saltar al contenido</a>
   <header class="site-header wrap">
     <a class="brand" href="index.html" aria-label="Robert Bonmatí Muñoz, inicio"><span aria-hidden="true">//</span> RBM</a>
-    <nav aria-label="Principal">
-      <a href="index.html" aria-current="page">Inicio</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="trayectoria.html">Trayectoria</a>
-      <a href="stack.html">Stack</a>
-      <a href="contacto.html">Contacto</a>
+    <button class="menu-toggle button" type="button" aria-expanded="false" aria-controls="main-nav" hidden>
+      Menú <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+    <nav id="main-nav" aria-label="Principal">
+      <div class="menu-links">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="trayectoria.html">Trayectoria</a>
+        <a href="stack.html">Stack</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
     </nav>
   </header>
 
   <main id="main">
     <section id="hero" class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <!--<p class="meta availability"><span aria-hidden="true"></span> En búsqueda activa de empleo · 2026</p>-->
+      <div class="hero-heading">
         <h1 id="hero-title">Robert<br><em>Bonmatí</em><br>Muñoz<span aria-hidden="true">.</span></h1>
-        <p class="role" lang="en">Creative developer &amp; cybersecurity</p>
-        <p class="hero-intro">Soy un desarrollador apasionado por el cruce entre el diseño, el código y la ciberseguridad. Me obsesionan los detalles, las animaciones suaves y los sistemas que escalan.</p>
-        <div class="actions">
-          <a class="button button-dark" href="proyectos.html">Proyectos</a>
-          <a class="button" href="#about">Sobre mí</a>
-        </div>
       </div>
 
       <!-- La escena conserva una composición estática sin JavaScript. -->
@@ -52,6 +50,15 @@
           <span class="visually-hidden" role="status" data-palette-status></span>
         </figcaption>
       </figure>
+
+      <div class="hero-copy">
+        <p class="role" lang="en">Creative developer &amp; cybersecurity</p>
+        <p class="hero-intro">Soy un desarrollador apasionado por el cruce entre el diseño, el código y la ciberseguridad. Me obsesionan los detalles, las animaciones suaves y los sistemas que escalan.</p>
+        <div class="actions">
+          <a class="button button-dark" href="proyectos.html">Proyectos</a>
+          <a class="button" href="#about">Sobre mí</a>
+        </div>
+      </div>
     </section>
 
     <section id="about" class="section wrap about" aria-labelledby="about-title">
